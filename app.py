@@ -71,7 +71,7 @@ if img is not None:
                 st.image(palette)
 
                 for i, color in enumerate(dominant_colors):
-                    st.write(f"RGB Color Codes {i}: {tuple(map(int, color))}")
+                    st.write(f"RGB Color Codes {i+1}: {tuple(map(int, color))}")
             
             create_color_palette(kmeans.cluster_centers_.astype(int))
             
